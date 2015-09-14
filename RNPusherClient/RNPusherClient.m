@@ -12,18 +12,18 @@
 #import "RCTBridgeModule.h"
 #import "RCTEventDispatcher.h"
 
-NSString *const PusherNewEvent = @"pusherNewEvent";
-NSString *const PusherWillConnect = @"pusherWillConnect";
-NSString *const PusherDidConnect = @"pusherDidConnect";
-NSString *const PusherDidDisconnectWithError = @"pusherDidDisconnectWithError";
-NSString *const PusherFailedWithError = @"pusherFailedWithError";
-NSString *const PusherWillAutomaticallyReconnect = @"pusherWillAutomaticallyReconnect";
-NSString *const PusherWillAuthorizeChannel = @"pusherWillAuthorizeChannel";
-NSString *const PusherAuthorizationPayloadFromResponseData = @"pusherAuthorizationPayloadFromResponseData";
-NSString *const PusherDidSubscribeToChannel = @"pusherDidSubscribeToChannel";
-NSString *const PusherDidUnsubscribeFromChannel = @"pusherDidUnsubscribeFromChannel";
-NSString *const PusherDidFailToSubscribeToChannel = @"pusherDidFailToSubscribeToChannel";
-NSString *const PusherDidReceiveErrorEvent = @"pusherDidReceiveErrorEvent";
+NSString *const PusherNewEvent = @"Pusher.NewEvent";
+NSString *const PusherWillConnect = @"Pusher.WillConnect";
+NSString *const PusherDidConnect = @"Pusher.DidConnect";
+NSString *const PusherDidDisconnectWithError = @"Pusher.DidDisconnectWithError";
+NSString *const PusherFailedWithError = @"Pusher.FailedWithError";
+NSString *const PusherWillAutomaticallyReconnect = @"Pusher.WillAutomaticallyReconnect";
+NSString *const PusherWillAuthorizeChannel = @"Pusher.WillAuthorizeChannel";
+NSString *const PusherAuthorizationPayloadFromResponseData = @"Pusher.AuthorizationPayloadFromResponseData";
+NSString *const PusherDidSubscribeToChannel = @"Pusher.DidSubscribeToChannel";
+NSString *const PusherDidUnsubscribeFromChannel = @"Pusher.DidUnsubscribeFromChannel";
+NSString *const PusherDidFailToSubscribeToChannel = @"Pusher.DidFailToSubscribeToChannel";
+NSString *const PusherDidReceiveErrorEvent = @"Pusher.DidReceiveErrorEvent";
 
 
 @implementation RNPusherClient
