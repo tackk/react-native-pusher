@@ -1,0 +1,452 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		37AB3E5A1BA71D9100E08DFD /* RNPusherClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 37AB3E591BA71D9100E08DFD /* RNPusherClient.h */; };
+		37AB3E5C1BA71D9100E08DFD /* RNPusherClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 37AB3E5B1BA71D9100E08DFD /* RNPusherClient.m */; };
+		37AB3E621BA71D9100E08DFD /* libRNPusherClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37AB3E561BA71D9100E08DFD /* libRNPusherClient.a */; };
+		BAA71A6F703EBA4D1C5F1D94 /* libPods-RNPusherClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEF5216A43057972AB5A432 /* libPods-RNPusherClient.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37AB3E631BA71D9100E08DFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 37AB3E4E1BA71D9100E08DFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 37AB3E551BA71D9100E08DFD;
+			remoteInfo = RNPusherClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		37AB3E541BA71D9100E08DFD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				37AB3E5A1BA71D9100E08DFD /* RNPusherClient.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		37AB3E561BA71D9100E08DFD /* libRNPusherClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNPusherClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		37AB3E591BA71D9100E08DFD /* RNPusherClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNPusherClient.h; sourceTree = "<group>"; };
+		37AB3E5B1BA71D9100E08DFD /* RNPusherClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNPusherClient.m; sourceTree = "<group>"; };
+		37AB3E611BA71D9100E08DFD /* RNPusherClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RNPusherClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		37AB3E671BA71D9100E08DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61C228DC3C922571DD4AEB69 /* Pods-RNPusherClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNPusherClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNPusherClient/Pods-RNPusherClient.release.xcconfig"; sourceTree = "<group>"; };
+		C17A75306941DEAD3DF224C8 /* Pods-RNPusherClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNPusherClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNPusherClient/Pods-RNPusherClient.debug.xcconfig"; sourceTree = "<group>"; };
+		FFEF5216A43057972AB5A432 /* libPods-RNPusherClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNPusherClient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37AB3E531BA71D9100E08DFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAA71A6F703EBA4D1C5F1D94 /* libPods-RNPusherClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37AB3E5E1BA71D9100E08DFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37AB3E621BA71D9100E08DFD /* libRNPusherClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A615A5FEAED3D407852A404 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C17A75306941DEAD3DF224C8 /* Pods-RNPusherClient.debug.xcconfig */,
+				61C228DC3C922571DD4AEB69 /* Pods-RNPusherClient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		37AB3E4D1BA71D9100E08DFD = {
+			isa = PBXGroup;
+			children = (
+				37AB3E581BA71D9100E08DFD /* RNPusherClient */,
+				37AB3E651BA71D9100E08DFD /* RNPusherClientTests */,
+				37AB3E571BA71D9100E08DFD /* Products */,
+				0A615A5FEAED3D407852A404 /* Pods */,
+				F2993F4144FC861DCA6F1AE0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		37AB3E571BA71D9100E08DFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37AB3E561BA71D9100E08DFD /* libRNPusherClient.a */,
+				37AB3E611BA71D9100E08DFD /* RNPusherClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37AB3E581BA71D9100E08DFD /* RNPusherClient */ = {
+			isa = PBXGroup;
+			children = (
+				37AB3E591BA71D9100E08DFD /* RNPusherClient.h */,
+				37AB3E5B1BA71D9100E08DFD /* RNPusherClient.m */,
+			);
+			path = RNPusherClient;
+			sourceTree = "<group>";
+		};
+		37AB3E651BA71D9100E08DFD /* RNPusherClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				37AB3E661BA71D9100E08DFD /* Supporting Files */,
+			);
+			path = RNPusherClientTests;
+			sourceTree = "<group>";
+		};
+		37AB3E661BA71D9100E08DFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				37AB3E671BA71D9100E08DFD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2993F4144FC861DCA6F1AE0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFEF5216A43057972AB5A432 /* libPods-RNPusherClient.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37AB3E551BA71D9100E08DFD /* RNPusherClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37AB3E6A1BA71D9100E08DFD /* Build configuration list for PBXNativeTarget "RNPusherClient" */;
+			buildPhases = (
+				765EE6FB2360995256256E24 /* Check Pods Manifest.lock */,
+				37AB3E521BA71D9100E08DFD /* Sources */,
+				37AB3E531BA71D9100E08DFD /* Frameworks */,
+				37AB3E541BA71D9100E08DFD /* CopyFiles */,
+				4194F8C77AD5FBC8A4F1B251 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNPusherClient;
+			productName = RNPusherClient;
+			productReference = 37AB3E561BA71D9100E08DFD /* libRNPusherClient.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		37AB3E601BA71D9100E08DFD /* RNPusherClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37AB3E6D1BA71D9100E08DFD /* Build configuration list for PBXNativeTarget "RNPusherClientTests" */;
+			buildPhases = (
+				37AB3E5D1BA71D9100E08DFD /* Sources */,
+				37AB3E5E1BA71D9100E08DFD /* Frameworks */,
+				37AB3E5F1BA71D9100E08DFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				37AB3E641BA71D9100E08DFD /* PBXTargetDependency */,
+			);
+			name = RNPusherClientTests;
+			productName = RNPusherClientTests;
+			productReference = 37AB3E611BA71D9100E08DFD /* RNPusherClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37AB3E4E1BA71D9100E08DFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Tackk;
+				TargetAttributes = {
+					37AB3E551BA71D9100E08DFD = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					37AB3E601BA71D9100E08DFD = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 37AB3E511BA71D9100E08DFD /* Build configuration list for PBXProject "RNPusherClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 37AB3E4D1BA71D9100E08DFD;
+			productRefGroup = 37AB3E571BA71D9100E08DFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37AB3E551BA71D9100E08DFD /* RNPusherClient */,
+				37AB3E601BA71D9100E08DFD /* RNPusherClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37AB3E5F1BA71D9100E08DFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4194F8C77AD5FBC8A4F1B251 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RNPusherClient/Pods-RNPusherClient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		765EE6FB2360995256256E24 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37AB3E521BA71D9100E08DFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37AB3E5C1BA71D9100E08DFD /* RNPusherClient.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37AB3E5D1BA71D9100E08DFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		37AB3E641BA71D9100E08DFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 37AB3E551BA71D9100E08DFD /* RNPusherClient */;
+			targetProxy = 37AB3E631BA71D9100E08DFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		37AB3E681BA71D9100E08DFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		37AB3E691BA71D9100E08DFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37AB3E6B1BA71D9100E08DFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C17A75306941DEAD3DF224C8 /* Pods-RNPusherClient.debug.xcconfig */;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		37AB3E6C1BA71D9100E08DFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61C228DC3C922571DD4AEB69 /* Pods-RNPusherClient.release.xcconfig */;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../react-native/React/**",
+					"$(SRCROOT)/node_modules/react-native/React/**",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		37AB3E6E1BA71D9100E08DFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RNPusherClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		37AB3E6F1BA71D9100E08DFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RNPusherClientTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37AB3E511BA71D9100E08DFD /* Build configuration list for PBXProject "RNPusherClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37AB3E681BA71D9100E08DFD /* Debug */,
+				37AB3E691BA71D9100E08DFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37AB3E6A1BA71D9100E08DFD /* Build configuration list for PBXNativeTarget "RNPusherClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37AB3E6B1BA71D9100E08DFD /* Debug */,
+				37AB3E6C1BA71D9100E08DFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37AB3E6D1BA71D9100E08DFD /* Build configuration list for PBXNativeTarget "RNPusherClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37AB3E6E1BA71D9100E08DFD /* Debug */,
+				37AB3E6F1BA71D9100E08DFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 37AB3E4E1BA71D9100E08DFD /* Project object */;
+}

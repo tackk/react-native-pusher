@@ -1,0 +1,25 @@
+{
+  "name": "react-native-pusher",
+  "version": "1.0.0",
+  "description": "Pusher client for React Native",
+  "main": "PusherClient.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tackk/react-native-pusher.git"
+  },
+  "author": "Dan Horrigan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tackk/react-native-pusher/issues"
+  },
+  "homepage": "https://github.com/tackk/react-native-pusher#readme",
+  "devDependencies": {
+    "react-native": ">=0.10.0"
+  },
+  "peerDependencies": {
+    "react-native": ">=0.10.0"
+  },
+}

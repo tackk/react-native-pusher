@@ -1,0 +1,6 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1 kPTPusherClientLibraryVersion=@\"1.6\"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/SocketRocket" "${PODS_ROOT}/Headers/Public/libPusher" "${PODS_ROOT}/Headers/Public/libPusher/Pusher"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/SocketRocket" -isystem "${PODS_ROOT}/Headers/Public/libPusher" -isystem "${PODS_ROOT}/Headers/Public/libPusher/Pusher"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Pods-RNPusherClient-SocketRocket" -l"Pods-RNPusherClient-libPusher" -l"icucore" -framework "CFNetwork" -framework "Security"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods
