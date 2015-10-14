@@ -68,11 +68,10 @@ class Channel {
   bind(event, callback) {
     if (! this._callbacks.hasOwnProperty(event)) {
       this._callbacks[event] = [];
+      RNPusherClient.bind(this.name, event);
     }
 
     this._callbacks[event].push(callback);
-
-    RNPusherClient.bind(this.name, event);
 
     return this;
   }
