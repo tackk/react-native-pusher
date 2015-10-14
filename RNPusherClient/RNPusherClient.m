@@ -26,10 +26,12 @@ NSString *const PusherDidFailToSubscribeToChannel = @"Pusher.DidFailToSubscribeT
 NSString *const PusherDidReceiveErrorEvent = @"Pusher.DidReceiveErrorEvent";
 
 
+
 @implementation RNPusherClient
 {
   PTPusher *_client;
   NSString *_socketId;
+  NSMutableDictionary *_bindings;
 }
 
 RCT_EXPORT_MODULE();
@@ -46,6 +48,8 @@ RCT_EXPORT_METHOD(connect:(NSString *)apiKey)
 {
   _client = [PTPusher pusherWithKey:apiKey delegate:self encrypted:YES];
   [_client connect];
+
+  _bindings = [[NSMutableDictionary alloc] init];
 }
 
 
@@ -99,11 +103,19 @@ RCT_EXPORT_METHOD(bind:(NSString *)channelName withEventName:(NSString *)eventNa
   PTPusherChannel *channel = [_client channelNamed:channelName];
 
   if (channel) {
-    // TODO: keep track of the binding
-    [channel bindToEventNamed:eventName handleWithBlock:^(PTPusherEvent *channelEvent) {
+    
+    PTPusherEventBinding *binding = [channel bindToEventNamed:eventName handleWithBlock:^(PTPusherEvent *channelEvent) {
+      NSDictionary *event = @{
+        @"channel": channelEvent.channel,
+        @"name": channelEvent.name,
+        @"data": channelEvent.data
+      };
       [self.bridge.eventDispatcher sendAppEventWithName:PusherNewEvent
-                                                   body:@{@"name": channelEvent.name, @"data": channelEvent.data}];
+                                                   body:event];
     }];
+    
+    NSString *keyName = [NSString stringWithFormat:@"%@-%@", channelName, eventName];
+    [_bindings setObject:binding forKey:keyName];
   }
 }
 
@@ -119,7 +131,13 @@ RCT_EXPORT_METHOD(unbind:(NSString *)channelName withEventName:(NSString *)event
   PTPusherChannel *channel = [_client channelNamed:channelName];
   
   if (channel) {
-    // TODO: remove the binding
+    NSString *keyName = [NSString stringWithFormat:@"%@-%@", channelName, eventName];
+    PTPusherEventBinding *binding = [_bindings objectForKey:keyName];
+
+    if (binding) {
+      [channel removeBinding:binding];
+      [_bindings removeObjectForKey:keyName];
+    }
   }
 }
 
