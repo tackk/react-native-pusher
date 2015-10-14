@@ -22,6 +22,11 @@ class Channel {
       return this;
     }
 
+    // Only listen for this channel
+    if (event.channel !== this.name) {
+      return this;
+    }
+
     var callbacks = this._callbacks[event.name];
     if (callbacks && callbacks.length > 0) {
       for (var i = 0; i < callbacks.length; i++) {
